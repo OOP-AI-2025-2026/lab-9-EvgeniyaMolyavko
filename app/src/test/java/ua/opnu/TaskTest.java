@@ -492,7 +492,6 @@ public class TaskTest {
             Queue<Integer> expected = new LinkedList<>(Arrays.asList(data));
             Task task = new Task();
             task.reorder(actual);
-
             assertArrayEquals(actual.toArray(new Integer[0]), expected.toArray(new Integer[0]));
         }
 
